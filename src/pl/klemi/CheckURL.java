@@ -4,17 +4,17 @@ import java.net.URL;
 
 public class CheckURL {
 
-    public static boolean validateURL(String userLink)
+    public static boolean validateURL(String urlString)
     {
         try
         {
-            new URL(userLink.toUri)
+            new URL(urlString).toURI();
         }
         catch (Exception e)
         {
-
+            System.out.println(e);
+            return false;
         }
-
 
         return true;
     }
