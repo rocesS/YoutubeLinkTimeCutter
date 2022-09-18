@@ -19,10 +19,8 @@ public class Main {
 
         userLink = scanner.next();
 
-        String link = "https://www.google.com";
-        boolean validateUserlink; {
+        System.out.println(CheckURL.validateURL(userLink));
 
-        }
 
     }
 
