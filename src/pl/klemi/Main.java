@@ -19,10 +19,14 @@ public class Main {
 
         userLink = scanner.next();
 
-        System.out.println(CheckURL.validateURL(userLink));
+//Loop will work when inputed user's URL is valid
+
+            if (CheckURL.validateURL(userLink)){
+                System.out.println("Link Poprawny to będzie kontynuowane");
+            } else {
+                System.out.println("Podany link jest niepoprawny");
+            }
 
 
     }
-
-
 }
